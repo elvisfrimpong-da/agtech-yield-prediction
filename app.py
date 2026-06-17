@@ -6,8 +6,10 @@ import pickle
 
 # PAGE CONFIG
 
-st.set_page_config(page_title="AgTech Yield Predictor", layout="wide")
-
+st.set_page_config(
+    page_title="AgTech Yield Predictor",
+    layout="wide"
+)
 
 # LOAD MODEL
 
