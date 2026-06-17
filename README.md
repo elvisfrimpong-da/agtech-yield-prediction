@@ -38,8 +38,12 @@ https://agtech-yield-prediction.streamlit.app/
 The regression model achieved:
 
 * **R² Score:** 0.834
+* **Mean Absolute Error (MAE):** 0.92
 
-This indicates that the model explains approximately **83.4% of the variance** in crop yield based on the selected input features.
+This indicates that:
+
+* The model explains approximately **83.4% of the variance** in crop yield
+* The average prediction error is relatively low, showing **good predictive accuracy**
 
 ---
 
@@ -69,9 +73,7 @@ To demonstrate the application of machine learning in agriculture by developing 
 ---
 
 ## 📷 Application Preview
-
 Launch the live app to explore predictions and insights:
-
 https://agtech-yield-prediction.streamlit.app/
 
 ---
@@ -85,9 +87,8 @@ Agricultural Engineer | Data Analyst | AgTech Enthusiast
 
 ## 🔗 Connect With Me
 
-* Portfolio: https://elvisfrimpong-da.github.io/
+* Portfolio: https://elvisweb.netlify.app/
 * Connect Page: https://elvisfrimpong-da.github.io/connect/
 
 ---
-
 
