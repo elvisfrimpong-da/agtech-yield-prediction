@@ -1,0 +1,31 @@
+.stMainBlockContainer { max-width: 1200px; padding-top: 3.7rem; padding-bottom: 2rem; }
+.mast { color: #183e34; margin-bottom: .4rem; }
+.brand { display: flex; align-items: center; gap: .45rem; font-weight: 720; letter-spacing: .02em; }
+.brand svg { height: 22px; width: 22px; }
+.mast h1 { font: 500 clamp(2.4rem, 4.4vw, 4rem)/1.03 Georgia, serif; letter-spacing: -.045em; margin: .5rem 0 0; padding: 0; }
+.yield-panel { position: relative; isolation: isolate; overflow: hidden; border-radius: 18px; color: #fffaf0; background: #163f35; }
+.yield-copy { position: relative; padding: clamp(1.4rem, 3vw, 2.6rem); }
+.yield-copy p { margin: 0 0 1.2rem; color: #dbe7ca; font-size: .95rem; }
+.yield-copy h2 { font: 550 1.12rem/1.4 sans-serif; color: inherit; margin: 0; padding: 0; }
+.yield-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1rem; }
+.yield-line b { font: 500 clamp(4rem, 9vw, 7rem)/1.05 Georgia, serif; letter-spacing: -.055em; }
+.yield-line span { font-size: 1.1rem; }
+.field-art { position: absolute; inset: 0 0 0 47%; overflow: hidden; background: radial-gradient(circle at 72% 27%, #e9bc6d 0 24px, transparent 25px); }
+.field-art::before, .field-art::after { content: ""; position: absolute; width: 150%; height: 175%; border-radius: 48%; }
+.field-art::before { left: -18%; top: 46%; transform: rotate(14deg); background: repeating-radial-gradient(ellipse at 30% 96%, #285545 0 11px, #719074 12px 13px, #285545 14px 25px); }
+.field-art::after { left: 25%; top: 52%; transform: rotate(-24deg); background: repeating-radial-gradient(ellipse at 70% 130%, #376047 0 10px, #92a078 11px 12px, #376047 13px 21px); }
+.kpi-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .8rem; }
+.kpi { display: grid; align-content: start; padding: 1.15rem; border: 1px solid #d8dfd5; background: #fffef9; border-radius: 14px; color: #183e34; }
+.symbol { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #e4ebd6; color: #456139; }
+.symbol svg { width: 22px; height: 22px; }
+.rain .symbol { background: #dfedf1; color: #306477; }
+.temp .symbol { background: #faead9; color: #955825; }
+.drop .symbol { background: #ece5ed; color: #745476; }
+.kpi .label { font-size: .94rem; font-weight: 600; margin-top: .75rem; }
+.kpi strong { font-size: clamp(1.9rem, 3vw, 2.8rem); line-height: 1.2; letter-spacing: -.04em; overflow-wrap: anywhere; }
+.kpi small { color: #4c6356; font-size: .88rem; }
+@media (max-width: 720px) {
+  .kpi-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .55rem; }
+  .kpi { padding: .9rem; }
+  .field-art { left: 63%; opacity: .48; }
+}
