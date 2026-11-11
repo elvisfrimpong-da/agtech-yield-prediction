@@ -1,3 +1,4 @@
+from base64 import b64encode
 from html import escape
 from pathlib import Path
 import pickle
@@ -38,8 +39,11 @@ def icon(name):
         "drop": '<path d="M12 2S5 10.7 5 15a7 7 0 0 0 14 0c0-4.3-7-13-7-13Z"/><path d="M9 15a3 3 0 0 0 3 3"/>',
         "harvest": '<path d="M5 21 18 8M15 11c-1-4 0-7 5-9 1 5 0 8-5 9ZM11 15c-4-1-5-4-4-8 4 1 6 4 4 8Zm1-1c4-2 7-1 9 1-3 4-6 5-10 2"/>',
     }
-    return (f'<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-            f'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{paths[name]}</svg>')
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" '
+           f'stroke="#29483a" stroke-width="1.7" stroke-linecap="round" '
+           f'stroke-linejoin="round">{paths[name]}</svg>')
+    data = b64encode(svg.encode()).decode()
+    return f'<img width="22" height="22" alt="" src="data:image/svg+xml;base64,{data}">'
 
 
 def kpi(name, label, value, unit):

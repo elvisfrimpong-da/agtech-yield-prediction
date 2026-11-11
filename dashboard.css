@@ -1,7 +1,7 @@
 .stMainBlockContainer { max-width: 1200px; padding-top: 3.7rem; padding-bottom: 2rem; }
 .mast { color: #183e34; margin-bottom: .4rem; }
 .brand { display: flex; align-items: center; gap: .45rem; font-weight: 720; letter-spacing: .02em; }
-.brand svg { height: 22px; width: 22px; }
+.brand img { height: 22px; width: 22px; }
 .mast h1 { font: 500 clamp(2.4rem, 4.4vw, 4rem)/1.03 Georgia, serif; letter-spacing: -.045em; margin: .5rem 0 0; padding: 0; }
 .yield-panel { position: relative; isolation: isolate; overflow: hidden; border-radius: 18px; color: #fffaf0; background: #163f35; }
 .yield-copy { position: relative; padding: clamp(1.4rem, 3vw, 2.6rem); }
@@ -17,7 +17,7 @@
 .kpi-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .8rem; }
 .kpi { display: grid; align-content: start; padding: 1.15rem; border: 1px solid #d8dfd5; background: #fffef9; border-radius: 14px; color: #183e34; }
 .symbol { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #e4ebd6; color: #456139; }
-.symbol svg { width: 22px; height: 22px; }
+.symbol img { width: 22px; height: 22px; }
 .rain .symbol { background: #dfedf1; color: #306477; }
 .temp .symbol { background: #faead9; color: #955825; }
 .drop .symbol { background: #ece5ed; color: #745476; }
